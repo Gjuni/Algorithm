@@ -3,9 +3,14 @@
  * 
  *  난 이  도 : 실버 5
  * 
- *  아이디어 : 
+ *  아이디어 : N!에서 0의 갯수를 구하는 프로그램을 작성
  * 
- *  해    설 : 
+ *  해    설 : 처음에는 x0 의 갯수나 x00의 갯수를 세보려고 했으나
+ *              10이나 100은 2*5로 만들어짐, 단 2는 5보다 많을 수 밖에 없기에 5의 갯수를 세면 되지 않을까 생각함
+ *          -> 틀림
+ * 
+ *          해결책 : 
+ *              
  * 
  *  시간 복잡도 : 
  * 
@@ -24,7 +29,16 @@ public class B1316 {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        
+        int num = Integer.parseInt(input.readLine());
+        int answer = 0;
+
+        for(int i = 1; i <= num; i++) {
+            if(i%5 == 0) {
+                answer++;
+            }
+        }
+
+        output.write(String.valueOf(answer));
 
         input.close();
         output.close();
