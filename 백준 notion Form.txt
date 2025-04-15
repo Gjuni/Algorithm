@@ -19,3 +19,19 @@
 git 에 업로드 시
 "문제 번호 solved 문제 이름"
 "B1234 solved 문제 이름"
+
+
+
+
+import java.io.*;
+
+public class Main {
+    static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+    static BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
+    public static void main(String[] args) throws IOException{
+        
+
+        input.close();
+        output.close();
+    }
+}
