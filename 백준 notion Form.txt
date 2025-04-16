@@ -14,15 +14,6 @@
  */
 
 
-문제 풀 시 적용할 사항항
-
-git 에 업로드 시
-"문제 번호 solved 문제 이름"
-"B1234 solved 문제 이름"
-
-
-
-
 import java.io.*;
 
 public class Main {
@@ -35,3 +26,10 @@ public class Main {
         output.close();
     }
 }
+
+
+문제 풀 시 적용할 사항항
+
+git 에 업로드 시
+"문제 번호 solved 문제 이름"
+"B1234 solved 문제 이름"
