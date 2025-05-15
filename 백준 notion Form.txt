@@ -34,3 +34,5 @@ public class Main {
 git 에 업로드 시
 "문제 번호 solved 문제 이름"
 "B1234 solved 문제 이름"
+
+PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());

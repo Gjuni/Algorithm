@@ -13,7 +13,7 @@
  * 
  *            이렇게 만들 수 있는 수 중에서 가장 합이 큰 수를 구하는 것이 이 문제의 목적이다.
  * 
- *  해    설 : 시발 모르겠다
+ *  해    설 : 
  * 
  *  시간 복잡도 : 
  * 
@@ -23,48 +23,13 @@
 
 
 import java.io.*;
-import java.util.StringTokenizer;
 
 public class B11055 {
     static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
-    static int answer = 0;
-    static int[] DP;
-    static int[] arry;
-    static int index = 0;
-
-    public static int solve(int answer) {
-        for(int i = 0; i< arry.length; i++) {
-            DP[i] = arry[i];
-
-            for(int j = 1; j < arry.length; j++) { 
-                if(arry[i] < arry[j]) {
-                    DP[i] = Math.max(DP[i], DP[i] + arry[j]);
-                    answer = DP[i];
-                }
-            }
-        }
-
-        return answer;
-    }
-
 
     public static void main(String argc[]) throws IOException {
-        int repeat_num = Integer.parseInt(input.readLine());
-        DP = new int[repeat_num];
-        arry = new int[repeat_num];
-        index = repeat_num-1;
-
-
-        StringTokenizer token = new StringTokenizer(input.readLine());
         
-        for (int i = 0; i < repeat_num; i++) {
-            int insert_num = Integer.parseInt(token.nextToken());
-
-            arry[i] = insert_num;
-        }
-
-        output.write(String.valueOf(solve(0)));
 
         input.close();
         output.close();
